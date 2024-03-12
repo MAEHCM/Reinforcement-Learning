@@ -129,3 +129,19 @@ agent=ValueIteration(env,theta,gamma)
 agent.value_iteration()
 
 print_agent(agent,action_meaning,list([range(37,47)]),[47])
+
+#可以看到解决同样的训练任务，价值迭代总共进行了数十轮，而策略迭代中的策略评估总共进行了数百轮，价值迭代中的循环次数远少于策略迭代。
+
+```
+价值迭代一共进行14轮
+状态价值：
+-7.712 -7.458 -7.176 -6.862 -6.513 -6.126 -5.695 -5.217 -4.686 -4.095 -3.439 -2.710 
+-7.458 -7.176 -6.862 -6.513 -6.126 -5.695 -5.217 -4.686 -4.095 -3.439 -2.710 -1.900 
+-7.176 -6.862 -6.513 -6.126 -5.695 -5.217 -4.686 -4.095 -3.439 -2.710 -1.900 -1.000 
+-7.458 -7.176 -6.862 -6.513 -6.126 -5.695 -5.217 -4.686 -4.095 -3.439 -1.000 -1.000 
+策略：
+ovo> ovo> ovo> ovo> ovo> ovo> ovo> ovo> ovo> ovo> ovo> ovoo 
+ovo> ovo> ovo> ovo> ovo> ovo> ovo> ovo> ovo> ovo> ovo> ovoo 
+ooo> ooo> ooo> ooo> ooo> ooo> ooo> ooo> ooo> ooo> ooo> ovoo 
+^ooo ^ooo ^ooo ^ooo ^ooo ^ooo ^ooo ^ooo ^ooo ^ooo ooo> EEEE 
+```
