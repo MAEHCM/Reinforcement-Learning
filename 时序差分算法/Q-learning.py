@@ -128,3 +128,23 @@ def print_agent(agent,env,action_meaning,disaster,end):
 action_meaning=['^','v','<','>']
 print('Q-learning 算法最终收敛得到的策略为：')
 print_agent(agent,env,action_meaning,list(range(37,47)),[47])
+
+```
+Iteration 0: 100%|██████████| 50/50 [00:00<00:00, 1698.48it/s, episode=50, return=-105.700]
+Iteration 1: 100%|██████████| 50/50 [00:00<00:00, 2816.63it/s, episode=100, return=-70.900]
+Iteration 2: 100%|██████████| 50/50 [00:00<00:00, 3842.49it/s, episode=150, return=-56.500]
+Iteration 3: 100%|██████████| 50/50 [00:00<00:00, 4971.91it/s, episode=200, return=-46.500]
+Iteration 4: 100%|██████████| 50/50 [00:00<00:00, 5871.25it/s, episode=250, return=-40.800]
+Iteration 5: 100%|██████████| 50/50 [00:00<00:00, 7141.19it/s, episode=300, return=-20.400]
+Iteration 6: 100%|██████████| 50/50 [00:00<00:00, 8331.62it/s, episode=350, return=-45.700]
+Iteration 7: 100%|██████████| 50/50 [00:00<00:00, 9865.24it/s, episode=400, return=-32.800]
+Iteration 8: 100%|██████████| 50/50 [00:00<00:00, 12492.71it/s, episode=450, return=-22.700]
+Iteration 9: 100%|██████████| 50/50 [00:00<00:00, 12496.44it/s, episode=500, return=-61.700]
+Q-learning 算法最终收敛得到的策略为：
+^ooo ovoo ovoo ^ooo ^ooo ovoo ooo> ^ooo ^ooo ooo> ooo> ovoo 
+ooo> ooo> ooo> ooo> ooo> ooo> ^ooo ooo> ooo> ooo> ooo> ovoo 
+ooo> ooo> ooo> ooo> ooo> ooo> ooo> ooo> ooo> ooo> ooo> ovoo 
+^ooo **** **** **** **** **** **** **** **** **** **** EEEE 
+
+进程已结束,退出代码0
+```
