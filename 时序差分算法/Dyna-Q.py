@@ -128,4 +128,38 @@ plt.ylabel('Returns')
 plt.title('Dyna-Q on {}'.format('Cliff Walking'))
 plt.show()
 
-
+```
+Q-planning步数为:0
+Iteration 0: 100%|██████████| 30/30 [00:00<00:00, 1270.71it/s, episode=30, return=-138.400]
+Iteration 1: 100%|██████████| 30/30 [00:00<00:00, 1993.87it/s, episode=60, return=-64.100]
+Iteration 2: 100%|██████████| 30/30 [00:00<00:00, 2999.29it/s, episode=90, return=-46.000]
+Iteration 3: 100%|██████████| 30/30 [00:00<00:00, 3854.94it/s, episode=120, return=-38.000]
+Iteration 4: 100%|██████████| 30/30 [00:00<00:00, 4119.47it/s, episode=150, return=-28.600]
+Iteration 5: 100%|██████████| 30/30 [00:00<00:00, 5244.85it/s, episode=180, return=-25.300]
+Iteration 6: 100%|██████████| 30/30 [00:00<00:00, 5998.72it/s, episode=210, return=-23.600]
+Iteration 7: 100%|██████████| 30/30 [00:00<00:00, 7498.31it/s, episode=240, return=-20.100]
+Iteration 8: 100%|██████████| 30/30 [00:00<00:00, 5998.72it/s, episode=270, return=-17.100]
+Iteration 9: 100%|██████████| 30/30 [00:00<00:00, 9997.55it/s, episode=300, return=-16.500]
+Q-planning步数为:2
+Iteration 0: 100%|██████████| 30/30 [00:00<00:00, 937.79it/s, episode=30, return=-53.800]
+Iteration 1: 100%|██████████| 30/30 [00:00<00:00, 1506.32it/s, episode=60, return=-37.100]
+Iteration 2: 100%|██████████| 30/30 [00:00<00:00, 2160.71it/s, episode=90, return=-23.600]
+Iteration 3: 100%|██████████| 30/30 [00:00<00:00, 2726.64it/s, episode=120, return=-18.500]
+Iteration 4: 100%|██████████| 30/30 [00:00<00:00, 2854.56it/s, episode=150, return=-16.400]
+Iteration 5: 100%|██████████| 30/30 [00:00<00:00, 3332.69it/s, episode=180, return=-16.400]
+Iteration 6: 100%|██████████| 30/30 [00:00<00:00, 3749.04it/s, episode=210, return=-13.400]
+Iteration 7: 100%|██████████| 30/30 [00:00<00:00, 3749.15it/s, episode=240, return=-13.200]
+Iteration 8: 100%|██████████| 30/30 [00:00<00:00, 3995.08it/s, episode=270, return=-13.200]
+Iteration 9: 100%|██████████| 30/30 [00:00<00:00, 4417.38it/s, episode=300, return=-13.500]
+Q-planning步数为:20
+Iteration 0: 100%|██████████| 30/30 [00:00<00:00, 358.86it/s, episode=30, return=-18.500]
+Iteration 1: 100%|██████████| 30/30 [00:00<00:00, 614.29it/s, episode=60, return=-13.600]
+Iteration 2: 100%|██████████| 30/30 [00:00<00:00, 679.43it/s, episode=90, return=-13.000]
+Iteration 3: 100%|██████████| 30/30 [00:00<00:00, 629.62it/s, episode=120, return=-13.500]
+Iteration 4: 100%|██████████| 30/30 [00:00<00:00, 649.74it/s, episode=150, return=-13.500]
+Iteration 5: 100%|██████████| 30/30 [00:00<00:00, 637.03it/s, episode=180, return=-13.000]
+Iteration 6: 100%|██████████| 30/30 [00:00<00:00, 660.61it/s, episode=210, return=-22.000]
+Iteration 7: 100%|██████████| 30/30 [00:00<00:00, 633.40it/s, episode=240, return=-23.200]
+Iteration 8: 100%|██████████| 30/30 [00:00<00:00, 627.25it/s, episode=270, return=-13.000]
+Iteration 9: 100%|██████████| 30/30 [00:00<00:00, 646.72it/s, episode=300, return=-13.400]
+```
