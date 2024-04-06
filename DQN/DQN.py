@@ -187,5 +187,41 @@ plt.title('DQN on {}'.format(env_name))
 plt.show()
 
 
+```
+import numpy as np
+
+def moving_avarge(a,window_size):
+    #insert:[0 1 2 3 3 4 5 4 5 6 5 6 7]
+    cumulative_sum=np.cumsum(np.insert(a,0,0))
+    #cumsum:[0 1 3 6 9 13 18 22 27 33 38 44 51]
+    middle=(cumulative_sum[window_size:]-cumulative_sum[:-window_size])/window_size
+    #[ 6  9 13 18 22 27 33 38 44 51]-[ 0  1  3  6  9 13 18 22 27 33]
+    #[ 6  8 10 12 13 14 15 16 17 18]/3
+    #[2. 2.66666667 3.33333333 4. 4.33333333 4.66666667 5. 5.33333333 5.66666667 6. ]
+
+    r=np.arange(1,window_size-1,2)
+    #[1]
+
+    #print(np.cumsum(a[:window_size-1])[::2])
+    #[ 1  3  6  9 13 18 22 27 33 38 44 51]
+    #[ 1  6 13 22 33 44]
+    begin=np.cumsum(a[:window_size-1])[::2]/r
+
+    #[ 4  9 15 20 26 33 34 36 39 42 46 51]
+    #[ 4 15 26 34 39 46]
+    end=(np.cumsum(a[:-window_size:-1])[::2]/r)[::-1]
+    return np.concatenate((begin,middle,end))
+
+a=np.array([[[1,2,3],
+            [3,4,5]],
+            [[4,5,6],
+            [5,6,7]]])
+
+window_size=3
+
+b=moving_avarge(a,window_size)
+print(b)
+```
+
 
 
