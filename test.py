@@ -1,3 +1,0 @@
-#new push
-
-print('HELLO')
